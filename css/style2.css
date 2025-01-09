@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("../images/img2.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#header {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    z-index: 10;
+}
+
+#header h2 {
+    color: crimson;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#header h2::after {
+    content: '';
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    border-bottom: 4px solid crimson;
+}
+
+#questions {
+    position: absolute;
+    top: 31%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index:1;
+    font-size: 2rem;
+    width: 80%;
+    text-align: center;
+}
+
+#questions button {
+    background-color: #4a90e2;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1000px;
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 15px 15px 15px 20px;
+}
+
+#questions #endAnswer {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+    width: 30%;
+    max-width: 1000px;
+    font-size: 1.2rem;
+    padding: 15px 15px 15px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+#questions #endAnswer:hover {
+    background-color: #e74c3c;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    color: aliceblue;
+}
+
+#questions button:hover {
+    background-color: #4663f3;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    color: aliceblue;
+}
+
+#answeredCount {
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#endGameButton {
+    background-color: #dc3545;  /* Màu xanh lá cây */
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+    width: 30%;
+    max-width: 1000px;
+    font-size: 1.2rem;
+    padding: 15px 15px 15px 20px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#endGameButton:hover {
+    background-color: #218838;  /* Màu xanh lá cây đậm khi hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    color: aliceblue;
+}
+
